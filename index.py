@@ -15,6 +15,10 @@ app = Flask(__name__)
 def principal():
     return render_template('index.html')
 
+@app.route('/prueba')
+def prueba():
+    return render_template('prueba.html')
+
 @app.route('/informacion')
 def informacion():
     listaExponentes=(1,2,3,4,5)
